@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $background-color;
+}
+h1{
+    font-size: 4.2rem;
+    color: $primary-color;
+}
+h2{
+    font-size: 2.5rem;
+    color: $primary-color;
+    text-align: center;
+    text-decoration: underline;
+    margin: 2% 0;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    @include text-size;
+    color: $secondary-color;
+}
+hr{
+    width: 80vw;
+    margin: 4% auto;
+    color: $primary-color;
+    opacity: 0.1;
+}
+a{
+    text-decoration: none;
+}
+.top-arrow{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    &:hover{
+        fill:$primary-color;
+    }
+}

@@ -1,0 +1,51 @@
+@mixin flex-horizontal-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin text-size{
+    font-size: 1.5rem;
+}
+
+@mixin full-screen{
+    min-height: 100vh;
+}
+
+@mixin button{
+    display: inline-block;
+    border: 2px $primary-color solid;
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: $primary-color;
+    transition: 1s;
+    margin: auto;
+}
+
+@mixin button-hover{
+    background-color: $primary-color;
+    color: white;
+}
+
+@mixin radius{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+
+@mixin border-without-top{
+    border-left: 1px $secondary-color solid;
+    border-right: 1px $secondary-color solid;
+    border-bottom: 1px $secondary-color solid;
+}
