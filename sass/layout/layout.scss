@@ -1,4 +1,7 @@
 .bloc{
     @include flex-column-center;
     @include full-screen;
+    @media (max-width:500px){
+        min-height: 50vh;
+    }
 }

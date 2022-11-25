@@ -12,3 +12,9 @@ const closeModal = (id) => {
     main.style.backgroundColor = "#f5f5f5"
 
 }
+
+/**Script pour menu mobile */
+let menu = document.getElementById('menu');
+menu.addEventListener('click', () => {
+    menu.classList.toggle('ouverture');
+})
