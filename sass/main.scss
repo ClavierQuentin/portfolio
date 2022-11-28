@@ -151,6 +151,9 @@
             }
             a{
                 cursor: pointer;
+                &:hover{
+                    color: $primary-color;
+                }
             }
         }
         .modal{
